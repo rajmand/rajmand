@@ -26,12 +26,10 @@ def lang_badge(lang):
     return f"![{lang}](https://img.shields.io/badge/-{lang.replace(' ', '%20')}-{color}?style=flat-square)"
 
 def main():
-    # Public endpoint - works with default GITHUB_TOKEN in Actions
     repos   = gh(f"https://api.github.com/users/{USERNAME}/repos?per_page=100&sort=pushed&type=owner")
     total   = len(repos)
     public  = sum(1 for r in repos if not r["private"])
     private = total - public
-    stars   = sum(r.get("stargazers_count", 0) for r in repos)
     updated = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     top     = sorted(repos, key=lambda r: r.get("pushed_at") or "", reverse=True)[:6]
 
@@ -117,6 +115,10 @@ Senior Software Engineer with 10+ years building scalable backend systems and mi
 |--|------|-------------|----------|-----------|
 {rows}
 ---
+
+## Contribution activity
+
+![Contribution heatmap](https://ghchart.rshah.org/rajmand)
 
 ![GitHub stats](https://github-readme-stats.vercel.app/api?username=rajmand&show_icons=true&hide_border=true&count_private=true&theme=default)
 
