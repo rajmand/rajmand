@@ -7,11 +7,10 @@ TOKEN    = os.environ.get("GITHUB_TOKEN", "")
 USERNAME = "rajmand"
 
 def gh(url):
-    req = urllib.request.Request(url, headers={
-        "Authorization": f"Bearer {TOKEN}",
-        "Accept": "application/vnd.github+json",
-        "X-GitHub-Api-Version": "2022-11-28",
-    })
+    headers = {"Accept": "application/vnd.github+json"}
+    if TOKEN:
+        headers["Authorization"] = f"Bearer {TOKEN}"
+    req = urllib.request.Request(url, headers=headers)
     with urllib.request.urlopen(req) as r:
         return json.loads(r.read())
 
@@ -27,7 +26,8 @@ def lang_badge(lang):
     return f"![{lang}](https://img.shields.io/badge/-{lang.replace(' ', '%20')}-{color}?style=flat-square)"
 
 def main():
-    repos   = gh(f"https://api.github.com/user/repos?per_page=100&sort=pushed&affiliation=owner")
+    # Public endpoint - works with default GITHUB_TOKEN in Actions
+    repos   = gh(f"https://api.github.com/users/{USERNAME}/repos?per_page=100&sort=pushed&type=owner")
     total   = len(repos)
     public  = sum(1 for r in repos if not r["private"])
     private = total - public
@@ -112,8 +112,6 @@ Senior Software Engineer with 10+ years building scalable backend systems and mi
 ---
 
 ## My repositories
-
-<!-- AUTO-UPDATED by GitHub Actions -->
 
 | | Name | Description | Language | Last push |
 |--|------|-------------|----------|-----------|
