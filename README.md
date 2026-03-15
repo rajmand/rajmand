@@ -68,16 +68,14 @@ Senior Software Engineer with 10+ years building scalable backend systems and mi
 
 ## My repositories
 
-<!-- AUTO-UPDATED by GitHub Actions -->
-
 | | Name | Description | Language | Last push |
 |--|------|-------------|----------|-----------|
-| 🌐 [EveRgency](https://github.com/rajmand/EveRgency) | Eve Online local chat watch | Python | 2022-04-24 |
-| 🌐 [IssueTracker](https://github.com/rajmand/IssueTracker) | Issue tracker for Jira | Java | 2017-04-25 |
-| 🌐 [Databasepractice](https://github.com/rajmand/Databasepractice) | Example database practice | SQL | 2022-11-07 |
-| 🌐 [ttksocket](https://github.com/rajmand/ttksocket) | Socket-based communication layer | Python | 2024-01-02 |
-| 🔒 [ttkcube](https://github.com/rajmand/ttkcube) | Private project | | 2025-03-05 |
-| 🔒 [kbc](https://github.com/rajmand/kbc) | Private project | | 2025-10-28 |
+| 🌐 [rajmand](https://github.com/rajmand/rajmand) | Description | ![Python](https://img.shields.io/badge/-Python-3572A5?style=flat-square) | 2026-03-15 |
+| 🌐 [ttksocket](https://github.com/rajmand/ttksocket) | No description | ![JavaScript](https://img.shields.io/badge/-JavaScript-f1e05a?style=flat-square) | 2024-01-02 |
+| 🌐 [starter-discord-bot](https://github.com/rajmand/starter-discord-bot) | No description |  | 2022-12-28 |
+| 🌐 [Databasepractice](https://github.com/rajmand/Databasepractice) | Example database practice | ![Java](https://img.shields.io/badge/-Java-b07219?style=flat-square) | 2022-11-07 |
+| 🌐 [starter-micro-api](https://github.com/rajmand/starter-micro-api) | No description |  | 2022-10-06 |
+| 🌐 [EveRgency](https://github.com/rajmand/EveRgency) | Eve online local chat watch |  | 2022-04-24 |
 
 ---
 
@@ -85,4 +83,4 @@ Senior Software Engineer with 10+ years building scalable backend systems and mi
 
 ---
 
-<sub>⚡ Auto-updated by GitHub Actions</sub>
+<sub>⚡ Auto-updated by GitHub Actions · 2026-03-15 19:50 UTC</sub>
